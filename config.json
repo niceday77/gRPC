@@ -1,4 +1,7 @@
 {
+  "log": {
+    "loglevel": "warning"
+  },
   "inbounds": [
     {
       "port": 8080,
@@ -6,8 +9,7 @@
       "settings": {
         "clients": [
           {
-            "id": "827984ca-77ae-417c-8432-e8f8fe3901d8",
-            "encryption": "none"
+            "id": "UUID-HERE"
           }
         ],
         "decryption": "none"
@@ -15,14 +17,9 @@
       "streamSettings": {
         "network": "grpc",
         "grpcSettings": {
-          "serviceName": "vless-grpc",
-          "multiMode": true
+          "serviceName": "vlessgrpc",
+          "multiMode": false
         }
-      },
-      "sniffing": {
-        "enabled": true,
-        "destOverride": ["http", "tls"],
-        "routeOnly": true
       }
     }
   ],
